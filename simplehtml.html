@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML, CSS, and JavaScript</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container Styling */
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        /* Heading Styling */
+        h1 {
+            color: #2a71d0;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Objective Styling */
+        .objective {
+            background-color: #2a71d0;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Steps Styling */
+        .steps {
+            list-style-type: none;
+        }
+
+        .step {
+            background-color: #f9fafb;
+            border-left: 5px solid #2a71d0;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        .step h2 {
+            color: #2a71d0;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            margin-bottom: 8px;
+        }
+
+        /* Button Styling */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .alert-button {
+            background-color: #2a71d0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .alert-button:hover {
+            background-color: #1d5bbd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Learn HTML, CSS, and JavaScript</h1>
+
+        <div class="objective">
+            Objective: Learn and apply foundational HTML, CSS, and JavaScript concepts.
+        </div>
+
+        <ul class="steps">
+            <li class="step">
+                <h2>1. Create a Simple Webpage Using HTML</h2>
+                <p><strong>Objective:</strong> Understand basic HTML elements and structure.</p>
+                <p><strong>Actions:</strong> Build a webpage with headings, paragraphs, images, and links.</p>
+            </li>
+            <li class="step">
+                <h2>2. Style the Webpage Using CSS</h2>
+                <p><strong>Objective:</strong> Learn how to apply styling with CSS.</p>
+                <p><strong>Actions:</strong> Add colors, fonts, spacing, and layout adjustments to the webpage.</p>
+            </li>
+            <li class="step">
+                <h2>3. Add Basic JavaScript for Interactivity</h2>
+                <p><strong>Objective:</strong> Implement simple interactions using JavaScript.</p>
+                <p><strong>Actions:</strong> Create a button that triggers an alert message when clicked.</p>
+            </li>
+        </ul>
+
+        <div class="button-container">
+            <button class="alert-button" onclick="showAlert()">Click Me for Alert</button>
+        </div>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("JavaScript Alert: Button clicked!");
+        }
+    </script>
+</body>
+</html>
